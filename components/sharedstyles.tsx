@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 const Container = styled.div`
+  background-color: black;
+  color: white;
   padding: 0 0.5rem;
   display: flex;
   flex-flow: column nowrap;
@@ -9,6 +11,7 @@ const Container = styled.div`
   height: 100vh;
   min-height: 100vh;
 `;
+
 const Main = styled.main`
   padding: 5rem 0;
   flex: 1;
@@ -41,8 +44,27 @@ const Description = styled.p`
   line-height: 1.5;
   font-size: 1.5rem;
 `;
+
+const Input = styled.input`
+  margin: 15px 0;
+  width: 80%;
+  height: 20%;
+  padding: 10px;
+  font-size: 16px;
+  overflow-y: scroll;
+  overflow-x: inherit;
+  resize: vertical;
+`;
+
+const Button = styled.button`
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+`;
+
 const CodeTag = styled.code`
   background: #fafafa;
+  color: black;
   border-radius: 5px;
   margin: 0 0.75rem;
   padding: 0.75rem;
@@ -51,4 +73,4 @@ const CodeTag = styled.code`
     Bitstream Vera Sans Mono, Courier New, monospace;
 `;
 
-export { Container, Main, Title, Description, CodeTag };
+export { Container, Main, Title, Description, CodeTag, Input, Button };
